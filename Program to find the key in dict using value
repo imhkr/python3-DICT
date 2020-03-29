@@ -1,7 +1,6 @@
 d={1:2,3:4}
 v=int(input())
-while(v):
-    for i in d.keys():
+for i in d.keys():
         if v in d.values():
             print("the key for the given value ",v,"is",i)
         else:
