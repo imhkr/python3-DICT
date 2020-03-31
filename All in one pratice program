@@ -1,0 +1,87 @@
+'''
+1.wap to merge two python dictionaries
+d1={'hello':'hii','himanshu':'patel'}
+d2={'gla_student':{'branch':'btech cse','section':1},'year':1}
+d1.update(d2)
+print(d1)    
+'''
+
+'''
+#2.wap to iterate over dictionaries using loops
+d1={'hello':'hii','himanshu':'patel'}
+for keys,values in d1.items():
+    print(keys,values)
+'''
+'''
+#3.wap to sum of all the items in dict
+d={1:2,3:4,5:6,7:8}
+keys_total=0
+values_total=0
+for sum_of_keys , sum_of_values in d.items():
+    keys_total+=sum_of_keys    
+    values_total+=sum_of_values
+print("The sum of keys is",keys_total)    
+print("The sum of values is",values_total)
+print("The sum of the items",keys_total+values_total)
+'''
+'''
+#4.wap multiply all items all the items in dict.
+keys_multiply=1
+values_multiply=1
+d={1:3,2:4}
+for keys,values in d.items():
+    keys_multiply*=keys
+    values_multiply*=values
+print("The multiply of keys is",keys_multiply)
+print("The multiply of values is",values_multiply)
+print("The multipy of items is ",keys_multiply*values_multiply)
+'''
+'''
+#5.wap to remove a key from a dictionary.
+key=int(input("enter the key you want to remove"))
+d={1:2,3:4,5:4,6:3}
+print(d)
+if key in d:
+    del d[key]
+print(d)
+'''
+
+#6.wap to map two list into a dict.
+l1=[1,2,3,4]
+l2=[5,6,7,8,9,10]
+d=dict(zip(l1,l2))
+print(d)        
+
+
+
+'''
+#7.wap to sort a dict by key.
+d={1:2,4:5,6:7,10:3}
+t=sorted(d)
+print(t,d)'''
+
+'''
+#8.wap to get maximum and minimum value in a dict.
+d={1:2,3:4,5:6,7:8,9:10}.
+minimum=min(d.values())
+maximum=max(d.values())
+print("maximum is",maximum,"minimum is",minimum)
+'''
+'''
+#10.wap to remove duplicates from dict.
+d={1:2,2:3,1:2,25:5}
+t={}
+for key,value in d.items():
+    if value not in t.values():
+        t[key]=value
+print(t)
+'''
+'''
+#11.wap to check dict is empty or not.
+d={}
+if len(d)==0:
+     print("dict is empty")
+else:
+    print("not")
+    
+'''
